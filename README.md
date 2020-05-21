@@ -9,7 +9,7 @@ Docker image to be used for building a container ready with Oracle instant clien
 ## Usage
 
 In this project you will find two dockerfiles.
-One that mounts the image from local version 12 files and one that mounts remote version 19 files. You can clearly download version 19 and replace version 12 locally, just change the file names.
+One that mounts the image from local **version 12** files and one that mounts remote **version 19** files. You can clearly download other version and replace version 12 or 19 locally, just change the file names.
 
 **Pulling from docker hub:**
 ```
@@ -22,9 +22,9 @@ First, download or clone this repo to download docker file. After that, you can 
 
 If you are using the local docker, don't forget to copy the oracle folder from this repository to your project.
 
-Then build using Dockerfile.local or remote :
+Then build using **Dockerfile.local or remote** :
 ```
-docker build -t mycontainername -f Dockerfile.local .
+docker build -t mycontainername -f Dockerfile.remote .
 ```
 
 ### :latest
@@ -32,5 +32,5 @@ docker build -t mycontainername -f Dockerfile.local .
 Using "latest" (FROM jhomarolo/docker-node-oracle) as the version will use "FROM NODE:12" as it's base image.  It is recommended that you use a specific version (X.X.X) but if you only want the latest version of Node 12.X.X then latest will work.
 
 
-This repository was inspired and based on the repository: [https://github.com/CollinEstes/docker-node-oracle]https://github.com/CollinEstes/docker-node-oracle. Its need for creation was due to the need to work with remote files only.
+This repository was inspired and based on the repository: https://github.com/CollinEstes/docker-node-oracle. Its need for creation was due to the need to work with remote files only.
 
